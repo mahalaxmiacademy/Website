@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photo gallery and videos from Mahalaxmi Academy Bhilwara — certificate ceremonies, students, and RS-CIT Tally coaching videos.">
+  <title>Gallery | Mahalaxmi Academy – Bhilwara</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div id="page-loader"><div class="loader-ring"></div></div>
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress"></div>
+
+  <!-- LIGHTBOX -->
+  <div class="lb" id="lb">
+    <button id="lb-close" aria-label="Close lightbox">✕</button>
+    <button class="lb-btn" id="lb-prev" aria-label="Previous">&#8592;</button>
+    <img id="lb-img" src="" alt="Gallery image">
+    <button class="lb-btn" id="lb-next" aria-label="Next">&#8594;</button>
+  </div>
+
+  <!-- MOBILE NAV OVERLAY + DRAWER -->
+  <div id="nav-overlay"></div>
+  <div id="mobile-nav" class="mobile-nav" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+    <a href="index.html">🏠 Home</a>
+    <a href="courses.html">📚 Courses</a>
+    <a href="gallery.html">🖼️ Gallery</a>
+    <a href="about.html">⭐ About Us</a>
+    <a href="admission.html">📋 Admission</a>
+    <a href="contact.html">📍 Contact</a>
+    <a href="admission.html" class="mobile-nav-cta">🎓 Enroll Now — Free!</a>
+  </div>
+
+  <!-- MAIN NAV -->
+  <nav aria-label="Main navigation">
+    <a class="nav-logo" href="index.html" aria-label="Mahalaxmi Academy Home">
+      <img src="images/logo.png" alt="Mahalaxmi Academy Logo" width="48" height="48">
+      <div>
+        <div class="nm">Mahalaxmi Academy</div>
+        <div class="tg">RKCL Authorized Centre · Bhilwara</div>
+      </div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="admission.html">Admission</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-cta" onclick="location.href='admission.html'">Enroll Now</button>
+    <button id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="sec-label">Photos &amp; Videos</div>
+      <h1>Our <span class="accent">Gallery</span></h1>
+      <p>Glimpses from certificate ceremonies, classroom sessions, and student celebrations at Mahalaxmi Academy, Bhilwara.</p>
+      <nav class="page-hero-crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="crumb-sep">›</span><span>Gallery</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section class="gallery page-content" id="gallery" aria-labelledby="gallery-h">
+    <div class="gallery-hdr">
+      <div class="sec-label">Photo Gallery</div>
+      <h2 id="gallery-h">Life at Mahalaxmi Academy</h2>
+    </div>
+    <div class="gallery-grid" role="list">
+      <div class="g-item tall" role="listitem" tabindex="0"><img src="images/photo6.jpg"  alt="Students group photo" loading="lazy"></div>
+      <div class="g-item"      role="listitem" tabindex="0"><img src="images/photo1.webp" alt="Certificate distribution" loading="lazy"></div>
+      <div class="g-item"      role="listitem" tabindex="0"><img src="images/photo2.webp" alt="Academy students" loading="lazy"></div>
+      <div class="g-item"      role="listitem" tabindex="0"><img src="images/photo5.webp" alt="Certificate ceremony" loading="lazy"></div>
+      <div class="g-item"      role="listitem" tabindex="0"><img src="images/photo3.webp" alt="RS-CIT course banner" loading="lazy"></div>
+      <div class="g-item"      role="listitem" tabindex="0"><img src="images/photo4.webp" alt="English speaking course" loading="lazy"></div>
+      <div class="g-item"      role="listitem" tabindex="0"><img src="images/photo5.webp" alt="Digitel Markiting" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section class="videos-sec page-content" id="videos" aria-labelledby="videos-h" style="padding-top:0;">
+    <div class="sec-label">Our Videos</div>
+    <h2 id="videos-h">See Us in Action</h2>
+    <div class="videos-grid">
+      <div class="vid-card">
+        <video controls preload="metadata">
+          <source src="videos/video1.mp4" type="video/mp4">Your browser does not support video.
+        </video>
+        <div class="vid-card-info">
+          <h4>RS-CIT &amp; Tally New Batch Starting</h4>
+          <p>Join our new batch — limited seats at Mahalaxmi Academy, Bhilwara</p>
+        </div>
+      </div>
+      <div class="vid-card">
+        <video controls preload="metadata">
+          <source src="videos/video2.mp4" type="video/mp4">Your browser does not support video.
+        </video>
+        <div class="vid-card-info">
+          <h4>RS-CIT Coaching &amp; Tally Coaching</h4>
+          <p>Expert coaching at our centre in Sindhu Nagar, Bhilwara</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="foot-logo">
+      <img src="images/logo.png" alt="Mahalaxmi Academy Logo" width="46" height="46">
+      <div>
+        <div class="foot-fn">Mahalaxmi Academy</div>
+        <div class="foot-ft">RKCL Authorized Computer Education Centre</div>
+      </div>
+    </div>
+    <ul class="foot-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="admission.html">Admission</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p>© 2024 Mahalaxmi Academy, Bhilwara. All rights reserved.</p>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

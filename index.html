@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mahalaxmi Academy – RKCL Authorized Computer Centre in Bhilwara. RS-CIT, Python, Web Designing, English Speaking, Tally and more.">
+  <title>Home | Mahalaxmi Academy – Bhilwara</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div id="page-loader"><div class="loader-ring"></div></div>
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress"></div>
+
+  <!-- LIGHTBOX -->
+  <div class="lb" id="lb">
+    <button id="lb-close" aria-label="Close lightbox">✕</button>
+    <button class="lb-btn" id="lb-prev" aria-label="Previous">&#8592;</button>
+    <img id="lb-img" src="" alt="Gallery image">
+    <button class="lb-btn" id="lb-next" aria-label="Next">&#8594;</button>
+  </div>
+
+  <!-- MOBILE NAV OVERLAY + DRAWER -->
+  <div id="nav-overlay"></div>
+  <div id="mobile-nav" class="mobile-nav" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+    <a href="index.html">🏠 Home</a>
+    <a href="courses.html">📚 Courses</a>
+    <a href="gallery.html">🖼️ Gallery</a>
+    <a href="about.html">⭐ About Us</a>
+    <a href="admission.html">📋 Admission</a>
+    <a href="contact.html">📍 Contact</a>
+    <a href="admission.html" class="mobile-nav-cta">🎓 Enroll Now — Free!</a>
+  </div>
+
+  <!-- MAIN NAV -->
+  <nav aria-label="Main navigation">
+    <a class="nav-logo" href="index.html" aria-label="Mahalaxmi Academy Home">
+      <img src="images/logo.png" alt="Mahalaxmi Academy Logo" width="48" height="48">
+      <div>
+        <div class="nm">Mahalaxmi Academy</div>
+        <div class="tg">RKCL Authorized Centre · Bhilwara</div>
+      </div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="admission.html">Admission</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-cta" onclick="location.href='admission.html'">Enroll Now</button>
+    <button id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════ HERO ═══════ -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div>
+      <div class="hero-badge">
+        <span aria-hidden="true"></span> RKCL Authorized · Sindhu Nagar, Bhilwara
+      </div>
+      <h1 id="hero-heading">
+        Learn Digital Skills<br>
+        at <span class="accent">Mahalaxmi</span><br>
+        <span class="hot">Academy</span>
+      </h1>
+      <p class="hero-sub">
+        Government-certified computer education — RS-CIT, Python, Web Designing,
+        English Speaking, Hindi &amp; English Typing, Tally and more.
+        Trusted by <strong>5000+</strong> students in Bhilwara.
+      </p>
+      <div class="hero-btns">
+        <a href="courses.html" class="btn-primary">🎓 Explore Courses</a>
+        <a href="admission.html" class="btn-outline">💬 Free Counselling</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-n">5000+</div><div class="stat-l">Students Trained</div></div>
+        <div><div class="stat-n">15+</div><div class="stat-l">Courses</div></div>
+        <div><div class="stat-n">100%</div><div class="stat-l">Govt. Certified</div></div>
+      </div>
+    </div>
+    <div class="hero-right" aria-hidden="true">
+      <div class="hero-collage">
+        <img class="big"   src="images/photo6.jpg"  alt="Students group photo">
+        <img class="small" src="images/photo3.webp" alt="RS-CIT course banner">
+        <img class="small" src="images/photo4.webp" alt="English speaking course">
+      </div>
+      <div class="hero-logo-float"><img src="images/logo.png" alt="logo"></div>
+    </div>
+  </section>
+
+  <!-- ═══════ MARQUEE ═══════ -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-inner">
+      <span>RS-CIT</span><span class="sep">◆</span><span>English Speaking</span><span class="sep">◆</span>
+      <span>English Typing</span><span class="sep">◆</span><span>Hindi Typing</span><span class="sep">◆</span>
+      <span>Python Programming</span><span class="sep">◆</span><span>Web Designing</span><span class="sep">◆</span>
+      <span>Tally ERP · GST</span><span class="sep">◆</span><span>MS Office</span><span class="sep">◆</span>
+      <span>DTP</span><span class="sep">◆</span><span>RKCL Certified</span><span class="sep">◆</span><span>Bhilwara</span><span class="sep">◆</span>
+      <span>RS-CIT</span><span class="sep">◆</span><span>English Speaking</span><span class="sep">◆</span>
+      <span>English Typing</span><span class="sep">◆</span><span>Hindi Typing</span><span class="sep">◆</span>
+      <span>Python Programming</span><span class="sep">◆</span><span>Web Designing</span><span class="sep">◆</span>
+      <span>Tally ERP · GST</span><span class="sep">◆</span><span>MS Office</span><span class="sep">◆</span>
+      <span>DTP</span><span class="sep">◆</span><span>RKCL Certified</span><span class="sep">◆</span><span>Bhilwara</span><span class="sep">◆</span>
+    </div>
+  </div>
+
+  <!-- ═══════ QUICK LINKS ═══════ -->
+  <section style="padding:70px 5%;position:relative;z-index:1;">
+    <div class="sec-label">Quick Access</div>
+    <h2 style="margin-bottom:40px;">Everything You Need</h2>
+    <div class="grid">
+      <a href="courses.html" class="card" style="text-decoration:none;color:inherit;">
+        <div class="card-ico">📚</div>
+        <h3>All Courses</h3>
+        <p>RS-CIT, Python, Web Design, English Speaking, Typing, Tally, MS Office, DTP and more.</p>
+        <span class="card-tag">View All →</span>
+      </a>
+      <a href="gallery.html" class="card" style="text-decoration:none;color:inherit;">
+        <div class="card-ico">🖼️</div>
+        <h3>Gallery &amp; Videos</h3>
+        <p>See our centre, students, certificate ceremonies and promotional videos in action.</p>
+        <span class="card-tag">Browse →</span>
+      </a>
+      <a href="about.html" class="card" style="text-decoration:none;color:inherit;">
+        <div class="card-ico">⭐</div>
+        <h3>Why Choose Us</h3>
+        <p>RKCL authorized, expert faculty, modern lab, flexible batches and exam support.</p>
+        <span class="card-tag">Learn More →</span>
+      </a>
+      <a href="admission.html" class="card" style="text-decoration:none;color:inherit;">
+        <div class="card-ico">📋</div>
+        <h3>Admission Process</h3>
+        <p>5 simple steps to enroll. Fill our free enquiry form and get called within 24 hrs.</p>
+        <span class="card-tag">Enroll Now →</span>
+      </a>
+      <a href="contact.html" class="card" style="text-decoration:none;color:inherit;">
+        <div class="card-ico">📍</div>
+        <h3>Contact &amp; Location</h3>
+        <p>Near Cotton Plaza, Govt. Girls College Road, Sindhu Nagar, Bhilwara — 311001.</p>
+        <span class="card-tag">Get Directions →</span>
+      </a>
+      <a href="contact.html#social" class="card" style="text-decoration:none;color:inherit;">
+        <div class="card-ico">📲</div>
+        <h3>Follow Us</h3>
+        <p>Stay updated on Instagram and YouTube. New batches, tips, and student stories daily.</p>
+        <span class="card-tag">Connect →</span>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="foot-logo">
+      <img src="images/logo.png" alt="Mahalaxmi Academy Logo" width="46" height="46">
+      <div>
+        <div class="foot-fn">Mahalaxmi Academy</div>
+        <div class="foot-ft">RKCL Authorized Computer Education Centre</div>
+      </div>
+    </div>
+    <ul class="foot-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="admission.html">Admission</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p>© 2024 Mahalaxmi Academy, Bhilwara. All rights reserved.</p>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
